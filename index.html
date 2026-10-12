@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Crea idee e testi per i social della tua attività.">
+  <title>SocialPilot AI — Contenuti per la tua attività</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#"><span class="logo">S</span> SocialPilot <span class="muted">AI</span></a>
+    <a class="toplink" href="#generator">Prova gratis</a>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="pill">CONTENUTI SOCIAL, PIÙ SEMPLICI</div>
+      <h1>La tua prossima idea<br><span>per i social parte qui.</span></h1>
+      <p class="lead">Genera bozze di post, caption e idee promozionali pensate per la tua attività. Modificale e pubblicale quando vuoi.</p>
+      <a class="cta" href="#generator">Crea il primo contenuto <span>→</span></a>
+      <p class="small-note">Demo gratuita · Nessuna registrazione · Non pubblica automaticamente</p>
+    </section>
+
+    <section class="workspace" id="generator">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">IL TUO LABORATORIO</p>
+          <h2>Crea un contenuto</h2>
+        </div>
+        <span class="demo-tag">DEMO</span>
+      </div>
+      <form id="contentForm">
+        <label for="business">Nome dell'attività</label>
+        <input id="business" name="business" placeholder="Es. Caffè Centrale" maxlength="70" required>
+        <div class="two-col">
+          <div>
+            <label for="sector">Tipo di attività</label>
+            <select id="sector" name="sector">
+              <option value="bar">Bar o caffetteria</option>
+              <option value="restaurant">Ristorante o pizzeria</option>
+              <option value="beauty">Parrucchiere o centro estetico</option>
+              <option value="fitness">Palestra o personal trainer</option>
+              <option value="shop">Negozio</option>
+              <option value="other">Altro servizio locale</option>
+            </select>
+          </div>
+          <div>
+            <label for="format">Tipo di contenuto</label>
+            <select id="format" name="format">
+              <option value="post">Post Instagram</option>
+              <option value="reel">Idea per Reel</option>
+              <option value="promo">Promozione</option>
+              <option value="week">Mini calendario settimanale</option>
+            </select>
+          </div>
+        </div>
+        <label for="offer">Offerta o tema (facoltativo)</label>
+        <input id="offer" name="offer" placeholder="Es. cappuccino e brioche a prezzo speciale" maxlength="180">
+        <button class="cta full" type="submit">Genera la bozza <span>✦</span></button>
+      </form>
+      <div id="result" class="result hidden" aria-live="polite">
+        <div class="result-top"><h3>La tua bozza</h3><button type="button" id="copyBtn" class="secondary">Copia testo</button></div>
+        <pre id="output"></pre>
+        <p class="disclaimer">Questa versione demo usa modelli preimpostati: non è collegata a un modello AI. Controlla sempre prezzi, offerte e informazioni prima di pubblicare.</p>
+      </div>
+    </section>
+
+    <section class="how">
+      <p class="eyebrow">SEMPLICE DA USARE</p>
+      <h2>Da un'idea a una bozza in pochi secondi</h2>
+      <div class="steps">
+        <article><span>01</span><h3>Descrivi l'attività</h3><p>Inserisci il nome, il settore e il tema da promuovere.</p></article>
+        <article><span>02</span><h3>Genera e modifica</h3><p>Ottieni una bozza iniziale, poi adattala al tuo tono di voce.</p></article>
+        <article><span>03</span><h3>Pubblica tu</h3><p>Verifica i dettagli e copia il testo sui tuoi canali social.</p></article>
+      </div>
+    </section>
+
+    <section class="pricing">
+      <p class="eyebrow">IDEA DI OFFERTA</p>
+      <h2>Un servizio che puoi vendere</h2>
+      <div class="price-card">
+        <div><p class="price-label">Piano Pro · proposta iniziale</p><p class="price">39 €<span>/mese</span></p><p class="muted">Prezzo da testare con i primi clienti.</p></div>
+        <ul><li>30 idee e testi al mese</li><li>Calendario settimanale</li><li>Personalizzazione per attività</li><li>Revisione umana prima della consegna</li></ul>
+      </div>
+      <p class="pricing-note">Questa demo non raccoglie pagamenti né genera contenuti con un'AI vera. Prima di venderla come servizio, prova il flusso con clienti reali e chiarisci esattamente cosa ricevono.</p>
+    </section>
+  </main>
+
+  <footer><span>SocialPilot AI · Demo indipendente</span><span>Contenuti da verificare prima della pubblicazione</span></footer>
+  <script src="script.js"></script>
+</body>
+</html>
